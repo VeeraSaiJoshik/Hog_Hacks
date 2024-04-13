@@ -4,6 +4,7 @@ import 'package:flutter/widgets.dart';
 import 'package:haghocks/global_info.dart';
 import 'package:sign_in_button/sign_in_button.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class AuthenticationPage extends StatefulWidget {
   const AuthenticationPage({super.key});
