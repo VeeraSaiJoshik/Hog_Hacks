@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CLIENT_ID</key>
-	<string>181919615126-vsq7g83e9m0vbkfhnfmkm98p62l8ovt6.apps.googleusercontent.com</string>
-	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.181919615126-vsq7g83e9m0vbkfhnfmkm98p62l8ovt6</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDQseVqFmu5ub_VY8pgq5YbKOEkrQ3WemM</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.jackbowlin.PlanPerfect</string>
+	<string>com.example.haghocks</string>
 	<key>PROJECT_ID</key>
 	<string>planperfect-420200</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:181919615126:ios:6ccbe5570f8afd72011ab7</string>
+	<string>1:181919615126:ios:718b01131607df93011ab7</string>
 </dict>
 </plist>

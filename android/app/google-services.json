@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "181919615126",
+    "project_id": "planperfect-420200",
+    "storage_bucket": "planperfect-420200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181919615126:android:8e757bd3f6a9bfc0011ab7",
+        "android_client_info": {
+          "package_name": "com.example.haghocks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181919615126-2iuh7rsghchqsqp4b1r3d7itjivbb25g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrKOj39Jdo5E7nvB7B6keBh_QzsspGCpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181919615126-2iuh7rsghchqsqp4b1r3d7itjivbb25g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "181919615126-vhs44beepmma9d1tgnbagl63u3ahegip.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.haghocks"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
