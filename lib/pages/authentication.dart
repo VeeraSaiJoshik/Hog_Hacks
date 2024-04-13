@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:haghocks/global_info.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:haghocks/pages/dashboard.dart';
+import "package:googleapis_auth/auth_io.dart";
+import 'package:googleapis/calendar/v3.dart';
+import 'package:url_launcher/url_launcher.dart';
+
+
 
 class AuthenticationPage extends StatefulWidget {
   const AuthenticationPage({super.key});
@@ -12,6 +18,25 @@ class AuthenticationPage extends StatefulWidget {
 
 class _AuthenticationPageState extends State<AuthenticationPage> {
   @override
+  static const _scopes = const [CalendarApi.calendarScope];
+  var _credentials;
+
+  void prompt(String url) async {
+    print(url);
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
+
+  void initState(){
+    _credentials = new ClientId(
+        "690442509301-mpj0rm1dnb0nvpo9mi6g46grinh051mv.apps.googleusercontent.com",
+        "");
+    super.initState();
+  }
+
   Widget build(BuildContext context) {
     double width = MediaQuery.of(context).size.width;
     double height = MediaQuery.of(context).size.height;
@@ -68,9 +93,16 @@ class _AuthenticationPageState extends State<AuthenticationPage> {
                   height: 190,
                 ),
                 InkWell(
-                  onTap: (){
-                    print("Signin Up");
-                    Navigator.of(context).push(MaterialPageRoute(builder: (ctx) => Dashboard()));
+                  onTap: () async {
+                    print("here");
+                    final GoogleSignIn _googleSignIn = GoogleSignIn(
+                      clientId: '690442509301-mpj0rm1dnb0nvpo9mi6g46grinh051mv.apps.googleusercontent.com',
+                      scopes: <String>[
+                        CalendarApi.calendarScope,
+                      ],
+                    );
+                    await _googleSignIn.signIn();
+                    print("here");
                   },
                   child: Container(
                     width: width * 0.85, 
